@@ -1,0 +1,38 @@
+html {
+    font-family: sans-serif;
+}
+
+  /* Your CSS below here */
+
+:root {
+    --button-bg-color: #ff0000;
+    --text-line-height: 3.625rem;
+}
+.button {
+    /* size */
+    width: 12.5rem;
+    height: var(--text-line-height);
+
+
+    /* text */
+    line-height: var(--text-line-height);
+    text-align: center;
+    font-size: 1.125rem;    /* 18px(remに変換するpx値) / 16px(ルート要素のフォントサイズ)  = 1.125rem */
+    color: var(--button-bg-color);
+    text-shadow: 1px 1px 2px #000;
+
+    /* border */
+    border: 1px solid #8b0000;
+    border-radius: 15px;
+
+    /* gradient */
+    background: linear-gradient(to right bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.2) 90%, rgba(0,0,0,0.2) 100%);
+
+    /* shadow */
+    box-shadow: 3px 3px 5px #000, 3px 3px 3px rgba(255, 255, 255, 0.3) inset, -3px -3px 2px rgba(0, 0, 0, 0.3) inset;
+
+}
+
+.button-red {
+    background-color: var(--button-bg-color);
+}
